@@ -29,7 +29,23 @@ ul {
   list-style: none;
 }
 
+.heading {
+  text-align: center;
+  padding: 25px 0;
+}
+
 img {
   max-width: 100%;
   height: auto;
+}
+
+.container {
+  width: 100%;
+}
+
+.box {
+  width: 4rem;
+  height: 4rem;
+  display: inline-block;
+  border: 2px solid black;
 }
