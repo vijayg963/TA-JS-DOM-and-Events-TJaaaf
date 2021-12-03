@@ -1,25 +1,25 @@
 let screen = document.querySelector(".display");
 
-let output = document.querySelector(".display");
-let btn = document.querySelectorAll("button");
+let btns = document.querySelectorAll("button");
 let initialValue = 0;
+screen.innerText = initialValue;
 
 function handleBtn(event) {
-  if (event.target.classList.contains("equalto")) {
-    output.innerText = eval(output.innerText);
+  if (event.target.classList.contains("store")) {
+    screen.innerText = eval(screen.innerText);
     return;
   }
-  output.innerText += event.target.innerText;
+  if (event.target.classList.contains("clear")) {
+    screen.innerText = initialValue;
+    return;
+  }
+  if (screen.innerText == initialValue) {
+    screen.innerText = event.target.innerText;
+  } else {
+    screen.innerText += event.target.innerText;
+  }
 }
 
-btn.forEach((b) => {
-  b.addEventListener("click", handleBtn);
+btns.forEach((btn) => {
+  btn.addEventListener("click", handleBtn);
 });
-
-let clear = document.querySelector("#clear");
-
-clear.addEventListener("click", () => {
-  output.innerText = initialValue;
-});
-
-screen.innerText = result;
