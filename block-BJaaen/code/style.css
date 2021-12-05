@@ -1,0 +1,92 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  text-align: center;
+  line-height: 1.5;
+}
+
+h2 {
+  text-align: left;
+  padding: 0 3rem;
+  margin-top: 1.6rem;
+  font-weight: 600;
+}
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+h1 {
+  max-width: 500px;
+  padding: 30px;
+  margin: -30px;
+  border-radius: 2rem;
+  font-weight: bolder;
+  background-color: #479adf;
+}
+
+.usericon li {
+  color: #479adf;
+}
+body {
+  background-color: whitesmoke;
+}
+
+.main {
+  margin: 16px auto;
+  max-width: 500px;
+  border-radius: 2rem;
+  box-shadow: 3px 5px 10;
+  background-color: white;
+  padding: 32px;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+li {
+  font-size: 64px;
+  font-weight: 800;
+  color: lightcoral;
+  cursor: pointer;
+  padding: 1.5rem 2rem;
+}
+
+.select {
+  color: black;
+  background-color: rgb(139, 153, 197);
+  border-radius: 50%;
+}
+
+.result {
+  font-size: 3rem;
+  font-weight: 700;
+  color: crimson;
+  padding: 32px;
+}
