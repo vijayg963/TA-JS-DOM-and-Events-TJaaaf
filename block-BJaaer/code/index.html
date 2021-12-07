@@ -14,7 +14,7 @@
           <input
             id="name"
             type="text"
-            name="text"
+            name="name"
             placeholder="Enter your name"
           />
         </div>
@@ -29,7 +29,7 @@
         </div>
         <div class="form-control">
           <label for="movies">What do you love?</label>
-          <select id="gender" name="gender">
+          <select id="movie" name="movie">
             <option value="movies">Movies</option>
             <option value="series">Series</option>
             <option value="others">Others</option>
@@ -41,8 +41,8 @@
           <input
             id="color"
             type="color"
-            name="email"
-            placeholder="Enter your email"
+            name="color"
+            placeholder="your color"
           />
         </div>
         <div class="form-control">
@@ -52,8 +52,8 @@
             type="range"
             max="10"
             step="1"
-            name="email"
-            placeholder="Enter your email"
+            name="range"
+            placeholder="rating"
           />
         </div>
         <div class="form-control">
@@ -63,7 +63,7 @@
             <input
               type="radio"
               id="fiction"
-              name="drone"
+              name="books"
               value="fiction"
               checked
             />
@@ -74,14 +74,14 @@
             <input
               type="radio"
               id="non-fiction"
-              name="drone"
-              value="non-fiction"
+              name="books"
+              value="Non Fiction"
             />
             <label for="non-fiction">Non Fiction</label>
           </div>
 
           <div>
-            <input type="radio" id="adventure" name="drone" value="adventure" />
+            <input type="radio" id="fiction" name="books" value="Adventure" />
             <label for="adventure">Adventure</label>
           </div>
         </div>
@@ -89,9 +89,19 @@
           <input type="checkbox" id="terms" name="terms" />
           <label for="terms">I Agree to Terms</label>
         </div>
-        <button type="submit">Submit</button>
+        <button type="submit" value="submit">Submit</button>
       </form>
     </div>
+    <div class="modal modal-none">
+      <button class="btn-close">Close</button>
+      <!-- <h1>Name</h1>
+      <p>Email</p>
+      <p>Color</p>
+      <p>rating</p>
+      <p>Book Genre</p>
+      <strong>👉You Agree to Terms and Conditions</strong> -->
+    </div>
+
     <script src="./script.js"></script>
   </body>
 </html>
