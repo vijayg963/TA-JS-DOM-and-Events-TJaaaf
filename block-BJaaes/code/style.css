@@ -1,0 +1,97 @@
+/* CSS Reset */
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 16px;
+  padding: 25px;
+  background-color: rgb(240, 163, 163);
+}
+
+input {
+  padding: 8px;
+  text-align: left;
+  margin-top: 5px;
+}
+
+label {
+  margin-top: 5px;
+}
+
+h1 {
+  background-color: rgb(179, 175, 175);
+  font-size: 2rem;
+  padding: 20px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+#submit {
+  width: 85%;
+  margin: 16px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: center;
+  background-color: rgb(128, 128, 128);
+}
+
+form {
+  background-color: whitesmoke;
+  margin: 0 auto;
+  text-align: start;
+  max-width: 400px;
+  border-radius: 5px;
+}
+
+.inputSet {
+  padding: 8px 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.complete {
+  border: 3px solid green;
+}
+
+.error {
+  border: 2px dashed red;
+}

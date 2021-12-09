@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form Validation 👇</title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div>
+        <form action="submit">
+          <h1>Create Account</h1>
+          <div class="inputSet">
+            <label for="username">Username</label>
+            <input
+              type="text"
+              name="username"
+              id="username"
+              placeholder="Enter Your Username"
+            />
+            <small> </small>
+          </div>
+          <div class="inputSet">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              name="userName"
+              id="name"
+              placeholder="Enter Your Full Name"
+            />
+            <small></small>
+          </div>
+          <div class="inputSet">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your Email "
+            />
+            <small> </small>
+          </div>
+          <div class="inputSet">
+            <label for="contactNum">Phone Number</label>
+            <input
+              type="phone"
+              name="number"
+              id="contactNum"
+              placeholder="Enter your phone number"
+            />
+            <small> </small>
+          </div>
+          <div class="inputSet">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Enter your password"
+            />
+            <small> </small>
+          </div>
+          <div class="inputSet">
+            <label for="confirmPassword">Confirm Password</label>
+            <input
+              type="password"
+              name="confirmPassword"
+              id="confirmPassword"
+              placeholder="Confirm your password"
+            />
+            <small> </small>
+          </div>
+          <input type="submit" id="submit" />
+        </form>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
