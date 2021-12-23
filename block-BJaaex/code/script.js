@@ -1,6 +1,6 @@
 "use strict";
 
-var cardsArray = [
+const cardsArray = [
   {
     name: "shell",
     img: "img/blueshell.png",
@@ -51,33 +51,34 @@ var cardsArray = [
   },
 ];
 
-var gameGrid = cardsArray.concat(cardsArray).sort(function () {
+let game = document.getElementById("game");
+let grid = document.createElement("section");
+
+let gameGrid = cardsArray.concat(cardsArray).sort(function () {
   return 0.5 - Math.random();
 });
 
-var firstGuess = "";
-var secondGuess = "";
-var count = 0;
-var previousTarget = null;
-var delay = 1200;
+let firstGuess = "";
+let secondGuess = "";
+let count = 0;
+const previousTarget = null;
+let delay = 1200;
 
-var game = document.getElementById("game");
-var grid = document.createElement("section");
 grid.setAttribute("class", "grid");
 game.appendChild(grid);
 
 gameGrid.forEach(function (item) {
-  var name = item.name,
+  let name = item.name,
     img = item.img;
 
-  var card = document.createElement("div");
+  let card = document.createElement("div");
   card.classList.add("card");
   card.dataset.name = name;
 
-  var front = document.createElement("div");
+  let front = document.createElement("div");
   front.classList.add("front");
 
-  var back = document.createElement("div");
+  let back = document.createElement("div");
   back.classList.add("back");
   back.style.backgroundImage = "url(" + img + ")";
 
@@ -86,27 +87,27 @@ gameGrid.forEach(function (item) {
   card.appendChild(back);
 });
 
-var match = function match() {
-  var selected = document.querySelectorAll(".selected");
+let match = function match() {
+  let selected = document.querySelectorAll(".selected");
   selected.forEach(function (card) {
     card.classList.add("match");
   });
 };
 
-var resetGuesses = function resetGuesses() {
+let resetGuesses = function resetGuesses() {
   firstGuess = "";
   secondGuess = "";
   count = 0;
   previousTarget = null;
 
-  var selected = document.querySelectorAll(".selected");
+  let selected = document.querySelectorAll(".selected");
   selected.forEach(function (card) {
     card.classList.remove("selected");
   });
 };
 
 grid.addEventListener("click", function (event) {
-  var clicked = event.target;
+  let clicked = event.target;
 
   if (
     clicked.nodeName === "SECTION" ||
